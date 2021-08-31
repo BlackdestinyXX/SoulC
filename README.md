@@ -56,6 +56,9 @@ ciò significa che possiamo usare l'input fornito come variabile da stampare.
 
 La struttura di controllo qui conta come un ciclo, quindi è ovvio che si ripeterà all'infinito poiché non vengono fornite istruzioni.
 
+# Altri esempi (da altri programmatori)
+[ComeTiChiami.soulc](https://github.com/AndreaGennaioli/ComeTiChiami.soulc) fatto da [AndreaGennaioli](https://github.com/AndreaGennaioli/)
+
 # Sommario
 Se hai imparato tutto questo, hai compreso appieno le basi di SoulC e puoi dire di aver imparato un linguaggio di programmazione esoterico.
 
