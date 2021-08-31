@@ -32,7 +32,7 @@ Questo **memorizzerà** una "a" perché ci sono 97 "x" e "a" in ASCII è 97.
 
 Per capire cosa ".p" significa, possiamo dividerlo in due parti: '.' e 'p'. '.' è molto semplice da capire, stampa solamente l'output.
 
-perché per tutto questo tempo ho parlato di "memorizzare") Perchè ogni carattere nel file .soulc è in un array.
+Perché per tutto questo tempo ho parlato di "memorizzare"? Perchè ogni carattere nel file .soulc è in un array.
 Se voglio stampare più caratteri devo avanzare nell'array.
 Ora che abbiamo questo concetto chiaro nella mente, andiamo avanti.
 
