@@ -1,16 +1,15 @@
 # SoulC
-Sooo, I was seeing how a Brainfuck interpreter was made and I saw it was tastefully easy.
-I thought I could create a new esoteric programming language similar to brainfuck and I did it.
+Dunque, stavo guardando come è stato fatto l'interprete di Brainfuck, e ho visto che più semplice di quanto pensassi.
+Pensavo di poter creare un nuovo linguaggio di programmazione esoterico simile a brainfuck e l'ho fatto.
 
 ![SoulC](https://user-images.githubusercontent.com/68974876/130805678-5868d748-4d36-4f00-8261-95478d273c9c.png)
 
-As said before, SoulC is similar to Brainfuck but with some differences. 
-Don't know Brainfuck but you still want to program in SoulC? It's okay, I prepared a documentation of the language with 
-some examples to make it easier to understand (it's an esoteric programming language :D)
+Come ho detto prima, SoulC è simile a Brainfuck ma con alcune differenze. 
+Non conosci Brainfuck ma vorresti comunque imparare il SoulC? Tranquillo, ho preparato una documentazione che include anche alcuni esempi (resta comunque un linguaggio di programmazione esoterico :D).
 
-# Documentation:
+# Documentazione:
 
-Let's see some basics of the language
+Vediamo le basi del linguaggio:
 ```yml
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .p
@@ -19,44 +18,43 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxx
 .
 ```
-This program prints "Hi" and then, escape code of newline.
-Every 'x' represents a letter (or just a character if you want to make it simple) in ASCII, therefore it means that 
-to **memorize** a letter, you must type how many 'x' for how many characters in ASCII that letter will be.
+Questo programma stampa "Hi" e a questo punto, va a capo.
+Ogni 'x' rappresenta una lettera (o solo un carattere se vuoi semplificare) in ASCII, quindi significa che
+per **memorizzare** una lettera, devi digitare quante 'x' per quanti caratteri in ASCII sarà quella lettera.
 
-Example: 
+Esempio: 
 ```yml
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-This will **memorize** an 'a' because there are 97 'x' and 'a' in ASCII is 97.
+Questo **memorizzerà** una "a" perché ci sono 97 "x" e "a" in ASCII è 97.
 
+Per capire cosa ".p" significa, possiamo dividerlo in due parti: '.' e 'p'. '.' è molto semplice da capire, stampa solamente l'output.
 
-To understand what ".p" means, we can divide it in two parts: '.' and 'p'. '.' is very easy to understand, it just prints output.
+perché per tutto questo tempo ho parlato di "memorizzare") Perchè ogni carattere nel file .soulc è in un array.
+Se voglio stampare più caratteri devo avanzare nell'array.
+Ora che abbiamo questo concetto chiaro nella mente, andiamo avanti.
 
-Why did I talk about memorizing all this time? Because every character in the .soulc file is all in an array.
-If I want to print multiple characters I have to advance in the array. 
-Now that we have this concept clean in our mind, let's move on.
+'p' sta per **pointeradvance**, questo signifca che ogni volta che scriviamo 'p' nel nostro programma dopo l'output ('.')
+possiamo andare avanti nell'array, permettendoci di stampare più caratteri.
 
-'p' stays for **pointeradvance**, it means that by writing 'p' in our program after the output ('.')
-we can advance in the array, allowing ourselves to print more characters. 
+Ma cosa succede se volessimo tornare nell'array? Possiamo semplicemente usare 'q'.
 
-But what if we want to go back into the array? We can just use 'q'.
-
-Let's move on!
+Andiamo avanti!
 
 ```yml
 ,[.,]
 ```
 
-Ok, this can be particular to understand. ',' is input and these square brackets means counts as control structures.
-If you noticed that this code takes input and then prints out the input given in a loop, then you are right.
+Ok, questo potrebbe essere particolare da capire. ',' è un input e queste parentesi quadre significano conteggi come strutture di controllo.
+Se hai notato che questo codice accetta input e quindi stampa l'input fornito in un ciclo, hai ragione.
 
-For people who still don't understand how that code works, let's take it easy.
-All of this code takes place in **one element of the big array**, 
-that means that we can use the input given as a variable to print.
+Per le persone che non capiscono come funziona questo codice, lo spiego in modo semplice.
+Tutto questo codice si svolge in **un elemento di un grande array**,
+ciò significa che possiamo usare l'input fornito come variabile da stampare.
 
-The control structure here counts as a loop, so it's obvious it will repeat itself forever since no instructions are given.
+La struttura di controllo qui conta come un ciclo, quindi è ovvio che si ripeterà all'infinito poiché non vengono fornite istruzioni.
 
-# Summary
-If you learnt all of this, then you fully understood the basics of SoulC, and you can say you learnt an esoteric programming language.
+# Sommario
+Se hai imparato tutto questo, hai compreso appieno le basi di SoulC e puoi dire di aver imparato un linguaggio di programmazione esoterico.
 
-I can say just one thing now: **Enjoy the language!**
+Posso dire solo una cosa ora: **Goditi il linguaggio!**
