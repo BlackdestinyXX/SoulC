@@ -1,5 +1,5 @@
 # Avvertimento
-Io mi sono solo occupato della traduzione del readme del linguaggio, che è stato interamente creato da ThaMessia.
+Io mi sono solo occupato della traduzione del readme del linguaggio, che è stato interamente creato da [ThaMessia](https://github.com/ThaMessia/).
 # SoulC
 Dunque, stavo guardando come è stato fatto l'interprete di Brainfuck, e ho visto che più semplice di quanto pensassi.
 Pensavo di poter creare un nuovo linguaggio di programmazione esoterico simile a brainfuck e l'ho fatto.
